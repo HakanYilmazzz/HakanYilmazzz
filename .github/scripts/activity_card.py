@@ -15,11 +15,9 @@ LOGIN = os.environ.get("GH_LOGIN", "HakanYilmazzz")
 MAX_ROWS = 6
 
 
-def fetch():
-    if os.environ.get("ACT_FAKE"):
-        return json.load(open(os.environ["ACT_FAKE"]))
+def api(path):
     req = urllib.request.Request(
-        f"https://api.github.com/users/{LOGIN}/events/public?per_page=100",
+        "https://api.github.com" + path,
         headers={
             "Authorization": "Bearer " + os.environ["GITHUB_TOKEN"],
             "Accept": "application/vnd.github+json",
@@ -28,6 +26,31 @@ def fetch():
     )
     with urllib.request.urlopen(req, timeout=30) as r:
         return json.load(r)
+
+
+def fetch():
+    if os.environ.get("ACT_FAKE"):
+        return json.load(open(os.environ["ACT_FAKE"]))
+    return api(f"/users/{LOGIN}/events/public?per_page=100")
+
+
+def fetch_repos():
+    if os.environ.get("ACT_FAKE"):
+        return []
+    try:
+        return api(f"/users/{LOGIN}/repos?type=owner&sort=pushed&per_page=30")
+    except Exception as ex:  # optional enrichment
+        print("repo list failed:", ex, file=sys.stderr)
+        return []
+
+
+def commit_message(full_repo, sha):
+    if not sha or os.environ.get("ACT_FAKE"):
+        return ""
+    try:
+        return api(f"/repos/{full_repo}/commits/{sha}")["commit"]["message"].splitlines()[0]
+    except Exception:
+        return ""
 
 
 def short_repo(name):
@@ -51,6 +74,7 @@ STYLE = {
     "issue": ("!", "#fb923c"),
     "public": ("◉", "#4ade80"),
     "comment": ("”", "#9aa4c7"),
+    "repo": ("●", "#a5b4fc"),
 }
 
 
@@ -59,7 +83,7 @@ def describe(e):
     t, p, repo = e["type"], e.get("payload", {}), short_repo(e["repo"]["name"])
     if t == "PushEvent":
         commits = p.get("commits") or []
-        msg = commits[-1]["message"].splitlines()[0] if commits else ""
+        msg = commits[-1]["message"].splitlines()[0] if commits else commit_message(e["repo"]["name"], p.get("head"))
         branch = (p.get("ref") or "").replace("refs/heads/", "")
         count = len(commits) or p.get("size") or None
         return "push", repo, msg or (f"on {branch}" if branch else ""), count
@@ -126,6 +150,19 @@ for e in events:
         rows.pop()
         break
 
+# top up with recently pushed repos that are not already listed
+if len(rows) < MAX_ROWS:
+    shown = {r["repo"] for r in rows}
+    for rp in fetch_repos():
+        if rp.get("fork") or rp["name"].lower() == LOGIN.lower() or rp["name"] in shown:
+            continue
+        ts = dt.datetime.fromisoformat(rp["pushed_at"].replace("Z", "+00:00"))
+        rows.append({"kind": "repo", "repo": rp["name"], "sub": clip(rp.get("description") or "", 90),
+                     "n": None, "ts": ts, "extra": 0})
+        if len(rows) >= MAX_ROWS:
+            break
+    rows.sort(key=lambda r: r["ts"], reverse=True)
+
 TITLES = {
     "push": lambda r: f"Pushed {r['n']} commit{'s' if r['n'] != 1 else ''} to" if r["n"] else "Pushed to",
     "release": lambda r: "Released",
@@ -136,6 +173,7 @@ TITLES = {
     "issue": lambda r: "Issue in",
     "public": lambda r: "Open-sourced",
     "comment": lambda r: "Discussion in",
+    "repo": lambda r: "Working on",
 }
 
 W, PAD, ROW, TOP = 1000, 28, 66, 84
