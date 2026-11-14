@@ -1,5 +1,5 @@
 """Fetch last-7-days WakaTime stats and render assets/wakatime.svg."""
-import base64, json, os, sys, urllib.request
+import base64, json, os, sys, urllib.error, urllib.request
 from xml.sax.saxutils import escape
 
 OUT = sys.argv[1] if len(sys.argv) > 1 else "assets/wakatime.svg"
@@ -11,10 +11,21 @@ def fetch():
     key = os.environ["WAKATIME_API_KEY"].strip()
     req = urllib.request.Request(
         "https://wakatime.com/api/v1/users/current/stats/last_7_days",
-        headers={"Authorization": "Basic " + base64.b64encode(key.encode()).decode()},
+        headers={
+            "Authorization": "Basic " + base64.b64encode(key.encode()).decode(),
+            "User-Agent": "Mozilla/5.0 readme-stats-card",
+            "Accept": "application/json",
+        },
     )
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.load(r)["data"]
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.load(r)["data"]
+    except urllib.error.HTTPError as e:
+        body = e.read().decode(errors="replace")[:500]
+        print(f"WakaTime API error {e.code}: {body}", file=sys.stderr)
+        if not key:
+            print("WAKATIME_API_KEY secret is empty or missing.", file=sys.stderr)
+        raise
 
 data = fetch()
 langs = [l for l in (data.get("languages") or []) if l.get("total_seconds", 0) >= 60][:6]
