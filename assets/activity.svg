@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="234" viewBox="0 0 1000 234">
+<defs>
+  <linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#a855f7"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+  <linearGradient id="ln" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a855f7" stop-opacity=".2"/></linearGradient>
+</defs>
+<style>
+  .hd{font:700 22px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#e6edff}
+  .hs{font:500 13px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#8b93b8;letter-spacing:2.5px}
+  .tt{font:600 16px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#e6edff}
+  .rp{font-weight:800}
+  .sb{font:14px Consolas,'Courier New',monospace;fill:#9aa4c7}
+  .tm{font:600 13px Consolas,'Courier New',monospace;fill:#6b7394}
+  .gl{font:800 17px 'Segoe UI Symbol','Segoe UI',Ubuntu,'DejaVu Sans',Arial,sans-serif}
+  .row{opacity:0;animation:in .5s ease-out forwards}
+  @keyframes in{from{opacity:0;transform:translateX(-12px)}to{opacity:1;transform:none}}
+  .line{stroke-dasharray:1000;stroke-dashoffset:1000;animation:draw 1.4s .1s ease-out forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+</style>
+<rect x="1" y="1" width="998" height="232" rx="20" fill="#0b1026" stroke="url(#bd)" stroke-width="2"/>
+<text x="28" y="44" class="hd">Latest from the workshop</text>
+<text x="972" y="44" text-anchor="end" class="hs">UPDATED NOV 14, 11:14 UTC</text>
+<path d="M50 102V168" stroke="url(#ln)" stroke-width="2" class="line"/>
+  <g class="row" style="animation-delay:0.15s">
+    <circle cx="50" cy="102" r="16" fill="#0b1026" stroke="#f472b6" stroke-width="2"/>
+    <text x="50" y="108" text-anchor="middle" class="gl" fill="#f472b6">◆</text>
+    <text x="82" y="100" class="tt">Released <tspan class="rp" fill="#f472b6">MasaustuMahallesi</tspan></text>
+    <text x="82" y="122" class="sb">Published Masaüstü Mahallesi v1.0.3 (+2 more)</text>
+    <text x="972" y="100" text-anchor="end" class="tm">15h ago</text>
+  </g>
+  <g class="row" style="animation-delay:0.27s">
+    <circle cx="50" cy="168" r="16" fill="#0b1026" stroke="#22d3ee" stroke-width="2"/>
+    <text x="50" y="174" text-anchor="middle" class="gl" fill="#22d3ee">↑</text>
+    <text x="82" y="166" class="tt">Pushed to <tspan class="rp" fill="#22d3ee">BrighNess</tspan></text>
+    <text x="82" y="188" class="sb">on main</text>
+    <text x="972" y="166" text-anchor="end" class="tm">18d ago</text>
+  </g>
+</svg>
