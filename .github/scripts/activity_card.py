@@ -122,7 +122,13 @@ def ago(ts, now):
     if s < 86400:
         return f"{s // 3600}h ago"
     d = s // 86400
-    return "yesterday" if d == 1 else f"{d}d ago"
+    if d == 1:
+        return "yesterday"
+    if d < 45:
+        return f"{d}d ago"
+    if d < 365:
+        return f"{round(d / 30)} mo ago"
+    return f"{d // 365}y ago"
 
 
 events = fetch()
@@ -173,7 +179,7 @@ TITLES = {
     "issue": lambda r: "Issue in",
     "public": lambda r: "Open-sourced",
     "comment": lambda r: "Discussion in",
-    "repo": lambda r: "Working on",
+    "repo": lambda r: "Working on" if (dt.datetime.now(dt.timezone.utc) - r["ts"]).days < 30 else "Last touched",
 }
 
 W, PAD, ROW, TOP = 1000, 28, 66, 84
