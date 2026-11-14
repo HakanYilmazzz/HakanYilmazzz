@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/header.svg" width="100%" alt="Hi there, I'm Hakan" />
+  <img src="./assets/header.svg?v=2" width="100%" alt="Hi there, I'm Hakan" />
 </p>
 
 <p align="center">
@@ -12,7 +12,7 @@
 <br/>
 
 <p align="center">
-  <img src="./assets/terminal.svg" width="85%" alt="whoami" />
+  <img src="./assets/terminal.svg?v=2" width="85%" alt="whoami" />
 </p>
 
 <br/>
@@ -46,5 +46,5 @@
 </p>
 
 <p align="center">
-  <img src="./assets/footer.svg" width="100%" alt="Thanks for stopping by" />
+  <img src="./assets/footer.svg?v=2" width="100%" alt="Thanks for stopping by" />
 </p>
