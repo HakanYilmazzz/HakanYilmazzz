@@ -5,7 +5,15 @@ from xml.sax.saxutils import escape
 OUT = sys.argv[1] if len(sys.argv) > 1 else "assets/wakatime.svg"
 COLORS = ["#22d3ee", "#a855f7", "#f472b6", "#60a5fa", "#4ade80", "#fbbf24"]
 
+def describe(url):
+    from urllib.parse import urlparse
+    u = urlparse(url)
+    segs = [x for x in u.path.split("/") if x]
+    shape = "/".join(x if x in ("share", "api", "v1") or x.startswith("@") is False and len(x) < 4 else ("@user" if x.startswith("@") else f"<{len(x)} chars>") for x in segs)
+    return f"host={u.netloc} path={shape} ends_json={u.path.endswith('.json')} query={'yes' if u.query else 'no'} spaces={' ' in url}"
+
 def get_json(url):
+    print("fetching:", describe(url), file=sys.stderr)
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 readme-stats-card", "Accept": "application/json"})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
