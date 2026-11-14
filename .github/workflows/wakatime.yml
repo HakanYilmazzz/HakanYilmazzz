@@ -21,7 +21,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Render card
         env:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          WAKA_ACTIVITY_URL: ${{ secrets.WAKA_ACTIVITY_URL }}
+          WAKA_LANGS_URL: ${{ secrets.WAKA_LANGS_URL }}
         run: python3 .github/scripts/wakatime_card.py assets/wakatime.svg
       - name: Commit card
         run: |

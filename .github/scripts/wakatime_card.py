@@ -1,31 +1,43 @@
 """Fetch last-7-days WakaTime stats and render assets/wakatime.svg."""
-import base64, json, os, sys, urllib.error, urllib.request
+import json, os, sys, urllib.error, urllib.request
 from xml.sax.saxutils import escape
 
 OUT = sys.argv[1] if len(sys.argv) > 1 else "assets/wakatime.svg"
 COLORS = ["#22d3ee", "#a855f7", "#f472b6", "#60a5fa", "#4ade80", "#fbbf24"]
 
-def fetch():
-    if os.environ.get("WAKA_FAKE"):
-        return json.load(open(os.environ["WAKA_FAKE"]))["data"]
-    key = os.environ["WAKATIME_API_KEY"].strip()
-    req = urllib.request.Request(
-        "https://wakatime.com/api/v1/users/current/stats/last_7_days",
-        headers={
-            "Authorization": "Basic " + base64.b64encode(key.encode()).decode(),
-            "User-Agent": "Mozilla/5.0 readme-stats-card",
-            "Accept": "application/json",
-        },
-    )
+def get_json(url):
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 readme-stats-card", "Accept": "application/json"})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
-            return json.load(r)["data"]
+            return json.load(r)
     except urllib.error.HTTPError as e:
-        body = e.read().decode(errors="replace")[:500]
-        print(f"WakaTime API error {e.code}: {body}", file=sys.stderr)
-        if not key:
-            print("WAKATIME_API_KEY secret is empty or missing.", file=sys.stderr)
+        print(f"WakaTime error {e.code}: {e.read().decode(errors='replace')[:300]}", file=sys.stderr)
         raise
+
+def human(sec):
+    h, m = int(sec // 3600), int(sec % 3600 // 60)
+    if h and m: return f"{h} hr{'s' if h != 1 else ''} {m} min{'s' if m != 1 else ''}"
+    if h: return f"{h} hr{'s' if h != 1 else ''}"
+    return f"{m} min{'s' if m != 1 else ''}"
+
+def fetch():
+    """Uses WakaTime public share (embed) JSON links: no API key needed."""
+    if os.environ.get("WAKA_FAKE"):
+        return json.load(open(os.environ["WAKA_FAKE"]))["data"]
+    act_url = os.environ.get("WAKA_ACTIVITY_URL", "").strip()
+    lang_url = os.environ.get("WAKA_LANGS_URL", "").strip()
+    if not act_url or not lang_url:
+        print("WAKA_ACTIVITY_URL / WAKA_LANGS_URL secrets are missing; rendering placeholder.", file=sys.stderr)
+        return {"languages": []}
+    days = get_json(act_url).get("data", [])
+    total = sum(float(d.get("grand_total", {}).get("total_seconds", 0)) for d in days)
+    langs = get_json(lang_url).get("data", [])
+    out = []
+    for l in sorted(langs, key=lambda x: -float(x.get("percent", 0))):
+        pct = float(l.get("percent", 0))
+        secs = total * pct / 100
+        out.append({"name": l.get("name", "?"), "percent": pct, "total_seconds": secs, "text": human(secs)})
+    return {"languages": out, "human_readable_total": human(total)}
 
 data = fetch()
 langs = [l for l in (data.get("languages") or []) if l.get("total_seconds", 0) >= 60][:6]
