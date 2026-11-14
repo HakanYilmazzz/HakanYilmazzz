@@ -63,6 +63,18 @@
   </picture>
 </p>
 
+<br/>
+
+<h2 align="center">🤝 Let's Connect</h2>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/hakanylmz/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:hakanyilmazzz93@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail" /></a>
+  <a href="https://github.com/HakanYilmazzz?tab=repositories"><img src="https://img.shields.io/badge/Repositories-24292f?style=for-the-badge&logo=github&logoColor=white" alt="Repositories" /></a>
+</p>
+
+<br/>
+
 <p align="center">
   <img src="./assets/footer.svg?v=2" width="100%" alt="Thanks for stopping by" />
 </p>
