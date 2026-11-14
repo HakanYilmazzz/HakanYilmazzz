@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/header.svg?v=2" width="100%" alt="Hi there, I'm Hakan" />
+  <img src="./assets/header.svg?v=3" width="100%" alt="Hi there, I'm Hakan" />
 </p>
 
 <p align="center">
@@ -27,6 +27,13 @@
 
 <br/>
 
+<h2 align="center">🔥 Recent Activity</h2>
+
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
+
+<br/>
+
 <h2 align="center">📈 Activity</h2>
 
 <p align="center">
@@ -34,7 +41,7 @@
 </p>
 
 <p align="center">
-  <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution graph" />
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg?v=2" width="100%" alt="3D contribution graph" />
 </p>
 
 <p align="center">
