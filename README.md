@@ -61,7 +61,7 @@
 <h2 align="center">📈 Activity</h2>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=HakanYilmazzz&background=0b1026&border=a855f7&ring=a855f7&fire=f472b6&currStreakNum=22d3ee&sideNums=e6edff&currStreakLabel=a855f7&sideLabels=9aa4c7&dates=7d87ad&stroke=1f2547&hide_border=true&border_radius=16" width="70%" alt="GitHub streak" />
+  <img src="./assets/stats.svg" width="100%" alt="GitHub stats" />
 </p>
 
 <br/>
