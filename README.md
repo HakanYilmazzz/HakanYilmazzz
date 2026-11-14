@@ -30,6 +30,9 @@
 <h2 align="center">🔥 Recent Activity</h2>
 
 <!--START_SECTION:activity-->
+1. 🚀 Published release [Masaüstü Mahallesi v1.0.3](https://github.com/HakanYilmazzz/MasaustuMahallesi/releases/tag/v1.0.3) in [HakanYilmazzz/MasaustuMahallesi](https://github.com/HakanYilmazzz/MasaustuMahallesi)
+2. 🚀 Published release [Masaüstü Mahallesi v1.0.2](https://github.com/HakanYilmazzz/MasaustuMahallesi/releases/tag/v1.0.2) in [HakanYilmazzz/MasaustuMahallesi](https://github.com/HakanYilmazzz/MasaustuMahallesi)
+3. 🚀 Published release [Masaüstü Mahallesi v1.0.1](https://github.com/HakanYilmazzz/MasaustuMahallesi/releases/tag/v1.0.1) in [HakanYilmazzz/MasaustuMahallesi](https://github.com/HakanYilmazzz/MasaustuMahallesi)
 <!--END_SECTION:activity-->
 
 <br/>
