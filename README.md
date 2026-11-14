@@ -7,12 +7,23 @@
   <img src="https://img.shields.io/badge/🏭_ERP_/_MES-0b1026?style=for-the-badge" />
   <img src="https://img.shields.io/badge/🐧_DevOps_/_Linux-0b1026?style=for-the-badge" />
   <img src="https://komarev.com/ghpvc/?username=HakanYilmazzz&label=VISITORS&color=a855f7&style=for-the-badge" />
+  <a href="https://www.linkedin.com/in/hakanylmz/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:hakanyilmazzz93@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail" /></a>
+  <a href="https://github.com/HakanYilmazzz?tab=repositories"><img src="https://img.shields.io/badge/Repositories-24292f?style=for-the-badge&logo=github&logoColor=white" alt="Repositories" /></a>
 </p>
 
 <br/>
 
 <p align="center">
   <img src="./assets/terminal.svg?v=2" width="85%" alt="whoami" />
+</p>
+
+<br/>
+
+<h2 align="center">⏱️ Coding Time</h2>
+
+<p align="center">
+  <img src="./assets/wakatime.svg" width="85%" alt="WakaTime stats" />
 </p>
 
 <br/>
@@ -27,10 +38,12 @@
 
 <br/>
 
-<h2 align="center">⏱️ Coding Time</h2>
-
 <p align="center">
-  <img src="./assets/wakatime.svg" width="85%" alt="WakaTime stats" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HakanYilmazzz/HakanYilmazzz/output/snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/HakanYilmazzz/HakanYilmazzz/output/snake-light.svg" />
+    <img src="https://raw.githubusercontent.com/HakanYilmazzz/HakanYilmazzz/output/snake-dark.svg" width="100%" alt="Snake eating my contributions" />
+  </picture>
 </p>
 
 <br/>
@@ -49,24 +62,6 @@
 
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=HakanYilmazzz&background=0b1026&border=a855f7&ring=a855f7&fire=f472b6&currStreakNum=22d3ee&sideNums=e6edff&currStreakLabel=a855f7&sideLabels=9aa4c7&dates=7d87ad&stroke=1f2547&hide_border=true&border_radius=16" width="70%" alt="GitHub streak" />
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HakanYilmazzz/HakanYilmazzz/output/snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/HakanYilmazzz/HakanYilmazzz/output/snake-light.svg" />
-    <img src="https://raw.githubusercontent.com/HakanYilmazzz/HakanYilmazzz/output/snake-dark.svg" width="100%" alt="Snake eating my contributions" />
-  </picture>
-</p>
-
-<br/>
-
-<h2 align="center">🤝 Let's Connect</h2>
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/hakanylmz/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="mailto:hakanyilmazzz93@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail" /></a>
-  <a href="https://github.com/HakanYilmazzz?tab=repositories"><img src="https://img.shields.io/badge/Repositories-24292f?style=for-the-badge&logo=github&logoColor=white" alt="Repositories" /></a>
 </p>
 
 <br/>
