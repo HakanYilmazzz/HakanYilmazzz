@@ -110,7 +110,7 @@ tiles = [
     ("LONGEST STREAK", f"{best} day{'s' if best != 1 else ''}",
      f"{fmt_date(best_rng[0])} – {fmt_date(best_rng[1], True)}" if best_rng else "—", "#a855f7"),
     ("COMMITS", f"{cc['totalCommitContributions']:,}",
-     f"+ {cc['totalPullRequestContributions']} pull requests", "#4ade80"),
+     (f"+ {cc['totalPullRequestContributions']} pull requests" if cc['totalPullRequestContributions'] else "last 12 months"), "#4ade80"),
     ("STARS EARNED", f"{stars:,}", f"across {repos} public repos", "#fbbf24"),
     ("MOST ACTIVE DAY", WEEKDAYS[wd], f"avg {avgs[wd]:.1f} contributions", "#60a5fa"),
 ]
