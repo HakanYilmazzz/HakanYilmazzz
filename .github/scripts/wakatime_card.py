@@ -12,7 +12,18 @@ def describe(url):
     shape = "/".join(x if x in ("share", "api", "v1") or x.startswith("@") is False and len(x) < 4 else ("@user" if x.startswith("@") else f"<{len(x)} chars>") for x in segs)
     return f"host={u.netloc} path={shape} ends_json={u.path.endswith('.json')} query={'yes' if u.query else 'no'} spaces={' ' in url}"
 
+def clean(value):
+    """Accept a bare URL or a pasted embed snippet; return the share .json URL."""
+    import re
+    m = re.search(r"https?://(?:api\.)?wakatime\.com/share/[^\s\"'<>)]+", value or "")
+    if not m:
+        return (value or "").strip()
+    url = m.group(0).rstrip(".,;")
+    url = re.sub(r"\.(svg|png|json)$", "", url) + ".json"
+    return url
+
 def get_json(url):
+    url = clean(url)
     print("fetching:", describe(url), file=sys.stderr)
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 readme-stats-card", "Accept": "application/json"})
     try:
