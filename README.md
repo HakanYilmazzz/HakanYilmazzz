@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/📍_Balıkesir,_Türkiye-0b1026?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/📍_İstanbul,_Türkiye-0b1026?style=for-the-badge" />
   <img src="https://img.shields.io/badge/🏭_ERP_/_MES-0b1026?style=for-the-badge" />
   <img src="https://img.shields.io/badge/🐧_DevOps_/_Linux-0b1026?style=for-the-badge" />
   <img src="https://komarev.com/ghpvc/?username=HakanYilmazzz&label=VISITORS&color=a855f7&style=for-the-badge" />
@@ -34,7 +34,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=HakanYilmazzz&bg_color=0b1026&color=e6edff&line=a855f7&point=22d3ee&area=true&area_color=a855f7&title_color=e6edff&hide_border=true&radius=16" width="100%" alt="Contribution graph" />
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution graph" />
 </p>
 
 <p align="center">

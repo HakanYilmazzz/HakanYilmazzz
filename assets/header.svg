@@ -74,7 +74,7 @@
     <rect y="309" width="3" height="34" fill="#22d3ee" class="cur" x="429.0">
       <animate attributeName="x" dur="16.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.0000;0.7500;0.7544;0.7588;0.7631;0.7675;0.7719;0.7762;0.7806;0.7850;0.7894;0.7937;0.7981;0.8025;0.8069;0.8113;0.8156;0.8200;0.8244;0.8287;0.8331;0.9437;0.9472;0.9507;0.9542;0.9576;0.9611;0.9646;0.9681;0.9715;0.9750;1.0000" values="429.0;429.0;447.0;465.0;483.0;501.0;519.0;537.0;555.0;573.0;591.0;609.0;627.0;645.0;663.0;681.0;699.0;717.0;735.0;753.0;771.0;771.0;733.0;695.0;657.0;619.0;581.0;543.0;505.0;467.0;429.0;429.0"/></rect>
   </g>
-  <text x="600" y="404" text-anchor="middle" class="ft">BALIKESİR · TÜRKİYE   ◆   BUILDING SOFTWARE FOR FACTORIES &amp; HUMANS</text>
+  <text x="600" y="404" text-anchor="middle" class="ft">İSTANBUL · TÜRKİYE   ◆   BUILDING SOFTWARE FOR FACTORIES &amp; HUMANS</text>
   <rect x="1" y="1" width="1198" height="438" rx="21" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
 </g>
 </svg>
