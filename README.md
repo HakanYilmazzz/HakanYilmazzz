@@ -27,6 +27,14 @@
 
 <br/>
 
+<h2 align="center">⏱️ Coding Time</h2>
+
+<p align="center">
+  <img src="./assets/wakatime.svg" width="85%" alt="WakaTime stats" />
+</p>
+
+<br/>
+
 <h2 align="center">🔥 Recent Activity</h2>
 
 <!--START_SECTION:activity-->
