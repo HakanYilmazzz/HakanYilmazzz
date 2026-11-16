@@ -20,10 +20,10 @@
 
 <br/>
 
-<h2 align="center">⏱️ Coding Time</h2>
+<h2 align="center">🧬 Top Languages</h2>
 
 <p align="center">
-  <img src="./assets/wakatime.svg" width="85%" alt="WakaTime stats" />
+  <img src="./assets/languages.svg" width="100%" alt="Top languages" />
 </p>
 
 <br/>
