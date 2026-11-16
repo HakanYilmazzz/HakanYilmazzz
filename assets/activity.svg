@@ -18,48 +18,48 @@
 </style>
 <rect x="1" y="1" width="998" height="496" rx="20" fill="#0b1026" stroke="url(#bd)" stroke-width="2"/>
 <text x="28" y="44" class="hd">Latest from the workshop</text>
-<text x="972" y="44" text-anchor="end" class="hs">UPDATED NOV 16, 07:33 UTC</text>
+<text x="972" y="44" text-anchor="end" class="hs">UPDATED NOV 16, 17:48 UTC</text>
 <path d="M50 102V432" stroke="url(#ln)" stroke-width="2" class="line"/>
   <g class="row" style="animation-delay:0.15s">
     <circle cx="50" cy="102" r="16" fill="#0b1026" stroke="#f472b6" stroke-width="2"/>
     <text x="50" y="108" text-anchor="middle" class="gl" fill="#f472b6">◆</text>
     <text x="82" y="100" class="tt">Released <tspan class="rp" fill="#f472b6">MasaustuMahallesi</tspan></text>
     <text x="82" y="122" class="sb">Published Masaüstü Mahallesi v1.0.6 (+5 more)</text>
-    <text x="972" y="100" text-anchor="end" class="tm">21h ago</text>
+    <text x="972" y="100" text-anchor="end" class="tm">yesterday</text>
   </g>
   <g class="row" style="animation-delay:0.27s">
     <circle cx="50" cy="168" r="16" fill="#0b1026" stroke="#22d3ee" stroke-width="2"/>
     <text x="50" y="174" text-anchor="middle" class="gl" fill="#22d3ee">↑</text>
-    <text x="82" y="166" class="tt">Pushed to <tspan class="rp" fill="#22d3ee">BrighNess</tspan></text>
-    <text x="82" y="188" class="sb">refactor: migrate the GUI from PyQt5 to PyQt6</text>
-    <text x="972" y="166" text-anchor="end" class="tm">20d ago</text>
+    <text x="82" y="166" class="tt">Pushed to <tspan class="rp" fill="#22d3ee">MasaustuMahallesi</tspan></text>
+    <text x="82" y="188" class="sb">README: herkes dışarı kısayolu iki kez basılır, bir kez basmak ekranı yeniler</text>
+    <text x="972" y="166" text-anchor="end" class="tm">yesterday</text>
   </g>
   <g class="row" style="animation-delay:0.39s">
-    <circle cx="50" cy="234" r="16" fill="#0b1026" stroke="#a5b4fc" stroke-width="2"/>
-    <text x="50" y="240" text-anchor="middle" class="gl" fill="#a5b4fc">●</text>
-    <text x="82" y="232" class="tt">Last touched <tspan class="rp" fill="#a5b4fc">RootSpace</tspan></text>
-    <text x="82" y="254" class="sb">🔐 Offline-first DevOps vault PWA — AES-256 encrypted credentials, Zettelkasten notes, inf…</text>
-    <text x="972" y="232" text-anchor="end" class="tm">4 mo ago</text>
+    <circle cx="50" cy="234" r="16" fill="#0b1026" stroke="#22d3ee" stroke-width="2"/>
+    <text x="50" y="240" text-anchor="middle" class="gl" fill="#22d3ee">↑</text>
+    <text x="82" y="232" class="tt">Pushed to <tspan class="rp" fill="#22d3ee">BrighNess</tspan></text>
+    <text x="82" y="254" class="sb">refactor: migrate the GUI from PyQt5 to PyQt6</text>
+    <text x="972" y="232" text-anchor="end" class="tm">21d ago</text>
   </g>
   <g class="row" style="animation-delay:0.51s">
     <circle cx="50" cy="300" r="16" fill="#0b1026" stroke="#a5b4fc" stroke-width="2"/>
     <text x="50" y="306" text-anchor="middle" class="gl" fill="#a5b4fc">●</text>
-    <text x="82" y="298" class="tt">Last touched <tspan class="rp" fill="#a5b4fc">NetStatOnTaskBar</tspan></text>
-    <text x="82" y="320" class="sb">📶 Transparent, click-through Windows taskbar overlay — live download/upload speed &amp; ping,…</text>
-    <text x="972" y="298" text-anchor="end" class="tm">5 mo ago</text>
+    <text x="82" y="298" class="tt">Last touched <tspan class="rp" fill="#a5b4fc">RootSpace</tspan></text>
+    <text x="82" y="320" class="sb">🔐 Offline-first DevOps vault PWA — AES-256 encrypted credentials, Zettelkasten notes, inf…</text>
+    <text x="972" y="298" text-anchor="end" class="tm">4 mo ago</text>
   </g>
   <g class="row" style="animation-delay:0.63s">
     <circle cx="50" cy="366" r="16" fill="#0b1026" stroke="#a5b4fc" stroke-width="2"/>
     <text x="50" y="372" text-anchor="middle" class="gl" fill="#a5b4fc">●</text>
-    <text x="82" y="364" class="tt">Last touched <tspan class="rp" fill="#a5b4fc">FIFAWORLDCUPAPP</tspan></text>
-    <text x="82" y="386" class="sb"></text>
+    <text x="82" y="364" class="tt">Last touched <tspan class="rp" fill="#a5b4fc">NetStatOnTaskBar</tspan></text>
+    <text x="82" y="386" class="sb">📶 Transparent, click-through Windows taskbar overlay — live download/upload speed &amp; ping,…</text>
     <text x="972" y="364" text-anchor="end" class="tm">5 mo ago</text>
   </g>
   <g class="row" style="animation-delay:0.75s">
     <circle cx="50" cy="432" r="16" fill="#0b1026" stroke="#a5b4fc" stroke-width="2"/>
     <text x="50" y="438" text-anchor="middle" class="gl" fill="#a5b4fc">●</text>
-    <text x="82" y="430" class="tt">Last touched <tspan class="rp" fill="#a5b4fc">okey101Scorer</tspan></text>
+    <text x="82" y="430" class="tt">Last touched <tspan class="rp" fill="#a5b4fc">FIFAWORLDCUPAPP</tspan></text>
     <text x="82" y="452" class="sb"></text>
-    <text x="972" y="430" text-anchor="end" class="tm">6 mo ago</text>
+    <text x="972" y="430" text-anchor="end" class="tm">5 mo ago</text>
   </g>
 </svg>
