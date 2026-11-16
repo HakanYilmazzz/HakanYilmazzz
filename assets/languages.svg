@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="384" viewBox="0 0 1000 384">
+<defs>
+  <linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#a855f7"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+  <clipPath id="barclip"><rect x="32" y="92" width="936" height="18" rx="9"/></clipPath>
+</defs>
+<style>
+  .hd{font:700 22px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#e6edff}
+  .hs{font:500 13px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#8b93b8;letter-spacing:2.5px}
+  .nm{font:600 16px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#e6edff}
+  .rp{font:13px Consolas,'Courier New',monospace;fill:#6b7394}
+  .pc{font:700 15px Consolas,'Courier New',monospace;fill:#c4c9d6}
+  .seg{transform-box:fill-box;transform-origin:left;animation:grow .8s cubic-bezier(.2,.8,.2,1) both}
+  .mini{transform-box:fill-box;transform-origin:left;animation:grow 1s cubic-bezier(.2,.8,.2,1) both}
+  @keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  .row{opacity:0;animation:in .5s ease-out forwards}
+  @keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+</style>
+<rect x="1" y="1" width="998" height="382" rx="20" fill="#0b1026" stroke="url(#bd)" stroke-width="2"/>
+<text x="32" y="50" class="hd">What I write in</text>
+<text x="968" y="50" text-anchor="end" class="hs">ACROSS 30 PUBLIC REPOS</text>
+<rect x="32" y="92" width="936" height="18" rx="9" fill="#1f2547"/>
+<g clip-path="url(#barclip)"><rect x="32.00" y="92" width="257.78" height="18" fill="#A97BFF" class="seg" style="animation-delay:0.20s"/><rect x="289.78" y="92" width="222.28" height="18" fill="#3572A5" class="seg" style="animation-delay:0.28s"/><rect x="512.06" y="92" width="197.32" height="18" fill="#3178c6" class="seg" style="animation-delay:0.36s"/><rect x="709.38" y="92" width="157.12" height="18" fill="#f1e05a" class="seg" style="animation-delay:0.44s"/><rect x="866.50" y="92" width="55.45" height="18" fill="#555555" class="seg" style="animation-delay:0.52s"/><rect x="921.95" y="92" width="24.80" height="18" fill="#b07219" class="seg" style="animation-delay:0.60s"/><rect x="946.75" y="92" width="12.00" height="18" fill="#6E4C13" class="seg" style="animation-delay:0.68s"/><rect x="958.75" y="92" width="4.96" height="18" fill="#41b883" class="seg" style="animation-delay:0.76s"/><rect x="963.71" y="92" width="4.29" height="18" fill="#4b5577" class="seg" style="animation-delay:0.84s"/></g>
+
+  <g class="row" style="animation-delay:0.50s">
+    <circle cx="40.0" cy="150" r="7" fill="#A97BFF"/>
+    <text x="58.0" y="156" class="nm">Kotlin</text>
+    <text x="232.0" y="156" class="rp">2 repos</text>
+    <rect x="312.0" y="146" width="88.0" height="8" rx="4" fill="#1f2547"/>
+    <rect x="312.0" y="146" width="88.0" height="8" rx="4" fill="#A97BFF" class="mini" style="animation-delay:0.50s"/>
+    <text x="480.0" y="156" text-anchor="end" class="pc">27.5%</text>
+  </g>
+  <g class="row" style="animation-delay:0.57s">
+    <circle cx="40.0" cy="194" r="7" fill="#3572A5"/>
+    <text x="58.0" y="200" class="nm">Python</text>
+    <text x="232.0" y="200" class="rp">3 repos</text>
+    <rect x="312.0" y="190" width="88.0" height="8" rx="4" fill="#1f2547"/>
+    <rect x="312.0" y="190" width="75.9" height="8" rx="4" fill="#3572A5" class="mini" style="animation-delay:0.57s"/>
+    <text x="480.0" y="200" text-anchor="end" class="pc">23.7%</text>
+  </g>
+  <g class="row" style="animation-delay:0.64s">
+    <circle cx="40.0" cy="238" r="7" fill="#3178c6"/>
+    <text x="58.0" y="244" class="nm">TypeScript</text>
+    <text x="232.0" y="244" class="rp">1 repo</text>
+    <rect x="312.0" y="234" width="88.0" height="8" rx="4" fill="#1f2547"/>
+    <rect x="312.0" y="234" width="67.4" height="8" rx="4" fill="#3178c6" class="mini" style="animation-delay:0.64s"/>
+    <text x="480.0" y="244" text-anchor="end" class="pc">21.1%</text>
+  </g>
+  <g class="row" style="animation-delay:0.71s">
+    <circle cx="40.0" cy="282" r="7" fill="#f1e05a"/>
+    <text x="58.0" y="288" class="nm">JavaScript</text>
+    <text x="232.0" y="288" class="rp">17 repos</text>
+    <rect x="312.0" y="278" width="88.0" height="8" rx="4" fill="#1f2547"/>
+    <rect x="312.0" y="278" width="53.6" height="8" rx="4" fill="#f1e05a" class="mini" style="animation-delay:0.71s"/>
+    <text x="480.0" y="288" text-anchor="end" class="pc">16.8%</text>
+  </g>
+  <g class="row" style="animation-delay:0.78s">
+    <circle cx="40.0" cy="326" r="7" fill="#555555"/>
+    <text x="58.0" y="332" class="nm">C</text>
+    <text x="232.0" y="332" class="rp">1 repo</text>
+    <rect x="312.0" y="322" width="88.0" height="8" rx="4" fill="#1f2547"/>
+    <rect x="312.0" y="322" width="18.9" height="8" rx="4" fill="#555555" class="mini" style="animation-delay:0.78s"/>
+    <text x="480.0" y="332" text-anchor="end" class="pc">5.9%</text>
+  </g>
+  <g class="row" style="animation-delay:0.85s">
+    <circle cx="508.0" cy="150" r="7" fill="#b07219"/>
+    <text x="526.0" y="156" class="nm">Java</text>
+    <text x="700.0" y="156" class="rp">1 repo</text>
+    <rect x="780.0" y="146" width="88.0" height="8" rx="4" fill="#1f2547"/>
+    <rect x="780.0" y="146" width="8.5" height="8" rx="4" fill="#b07219" class="mini" style="animation-delay:0.85s"/>
+    <text x="948.0" y="156" text-anchor="end" class="pc">2.6%</text>
+  </g>
+  <g class="row" style="animation-delay:0.92s">
+    <circle cx="508.0" cy="194" r="7" fill="#6E4C13"/>
+    <text x="526.0" y="200" class="nm">Assembly</text>
+    <text x="700.0" y="200" class="rp">1 repo</text>
+    <rect x="780.0" y="190" width="88.0" height="8" rx="4" fill="#1f2547"/>
+    <rect x="780.0" y="190" width="4.1" height="8" rx="4" fill="#6E4C13" class="mini" style="animation-delay:0.92s"/>
+    <text x="948.0" y="200" text-anchor="end" class="pc">1.3%</text>
+  </g>
+  <g class="row" style="animation-delay:0.99s">
+    <circle cx="508.0" cy="238" r="7" fill="#41b883"/>
+    <text x="526.0" y="244" class="nm">Vue</text>
+    <text x="700.0" y="244" class="rp">1 repo</text>
+    <rect x="780.0" y="234" width="88.0" height="8" rx="4" fill="#1f2547"/>
+    <rect x="780.0" y="234" width="4.0" height="8" rx="4" fill="#41b883" class="mini" style="animation-delay:0.99s"/>
+    <text x="948.0" y="244" text-anchor="end" class="pc">0.5%</text>
+  </g>
+  <g class="row" style="animation-delay:1.06s">
+    <circle cx="508.0" cy="282" r="7" fill="#4b5577"/>
+    <text x="526.0" y="288" class="nm">Other</text>
+    <text x="700.0" y="288" class="rp"></text>
+    <rect x="780.0" y="278" width="88.0" height="8" rx="4" fill="#1f2547"/>
+    <rect x="780.0" y="278" width="4.0" height="8" rx="4" fill="#4b5577" class="mini" style="animation-delay:1.06s"/>
+    <text x="948.0" y="288" text-anchor="end" class="pc">0.5%</text>
+  </g>
+</svg>
