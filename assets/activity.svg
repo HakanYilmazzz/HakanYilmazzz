@@ -18,7 +18,7 @@
 </style>
 <rect x="1" y="1" width="998" height="496" rx="20" fill="#0b1026" stroke="url(#bd)" stroke-width="2"/>
 <text x="28" y="44" class="hd">Latest from the workshop</text>
-<text x="972" y="44" text-anchor="end" class="hs">UPDATED NOV 23, 13:56 UTC</text>
+<text x="972" y="44" text-anchor="end" class="hs">UPDATED NOV 24, 01:29 UTC</text>
 <path d="M50 102V432" stroke="url(#ln)" stroke-width="2" class="line"/>
   <g class="row" style="animation-delay:0.15s">
     <circle cx="50" cy="102" r="16" fill="#0b1026" stroke="#f472b6" stroke-width="2"/>
