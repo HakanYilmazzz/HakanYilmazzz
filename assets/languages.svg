@@ -19,7 +19,7 @@
 <text x="32" y="50" class="hd">What I write in</text>
 <text x="968" y="50" text-anchor="end" class="hs">ACROSS 30 PUBLIC REPOS</text>
 <rect x="32" y="92" width="936" height="18" rx="9" fill="#1f2547"/>
-<g clip-path="url(#barclip)"><rect x="32.00" y="92" width="238.81" height="18" fill="#A97BFF" class="seg" style="animation-delay:0.20s"/><rect x="270.81" y="92" width="209.92" height="18" fill="#3572A5" class="seg" style="animation-delay:0.28s"/><rect x="480.74" y="92" width="182.80" height="18" fill="#3178c6" class="seg" style="animation-delay:0.36s"/><rect x="663.54" y="92" width="145.56" height="18" fill="#f1e05a" class="seg" style="animation-delay:0.44s"/><rect x="809.11" y="92" width="64.86" height="18" fill="#dea584" class="seg" style="animation-delay:0.52s"/><rect x="873.97" y="92" width="51.37" height="18" fill="#555555" class="seg" style="animation-delay:0.60s"/><rect x="925.34" y="92" width="22.98" height="18" fill="#b07219" class="seg" style="animation-delay:0.68s"/><rect x="948.32" y="92" width="11.12" height="18" fill="#6E4C13" class="seg" style="animation-delay:0.76s"/><rect x="959.43" y="92" width="8.57" height="18" fill="#4b5577" class="seg" style="animation-delay:0.84s"/></g>
+<g clip-path="url(#barclip)"><rect x="32.00" y="92" width="248.95" height="18" fill="#A97BFF" class="seg" style="animation-delay:0.20s"/><rect x="280.95" y="92" width="190.56" height="18" fill="#3178c6" class="seg" style="animation-delay:0.28s"/><rect x="471.51" y="92" width="179.12" height="18" fill="#3572A5" class="seg" style="animation-delay:0.36s"/><rect x="650.63" y="92" width="151.74" height="18" fill="#f1e05a" class="seg" style="animation-delay:0.44s"/><rect x="802.36" y="92" width="67.61" height="18" fill="#dea584" class="seg" style="animation-delay:0.52s"/><rect x="869.98" y="92" width="53.55" height="18" fill="#555555" class="seg" style="animation-delay:0.60s"/><rect x="923.53" y="92" width="23.95" height="18" fill="#b07219" class="seg" style="animation-delay:0.68s"/><rect x="947.48" y="92" width="11.59" height="18" fill="#6E4C13" class="seg" style="animation-delay:0.76s"/><rect x="959.07" y="92" width="8.93" height="18" fill="#4b5577" class="seg" style="animation-delay:0.84s"/></g>
 
   <g class="row" style="animation-delay:0.50s">
     <circle cx="40.0" cy="150" r="7" fill="#A97BFF"/>
@@ -27,23 +27,23 @@
     <text x="232.0" y="156" class="rp">2 repos</text>
     <rect x="312.0" y="146" width="88.0" height="8" rx="4" fill="#1f2547"/>
     <rect x="312.0" y="146" width="88.0" height="8" rx="4" fill="#A97BFF" class="mini" style="animation-delay:0.50s"/>
-    <text x="480.0" y="156" text-anchor="end" class="pc">25.5%</text>
+    <text x="480.0" y="156" text-anchor="end" class="pc">26.6%</text>
   </g>
   <g class="row" style="animation-delay:0.57s">
-    <circle cx="40.0" cy="194" r="7" fill="#3572A5"/>
-    <text x="58.0" y="200" class="nm">Python</text>
-    <text x="232.0" y="200" class="rp">3 repos</text>
+    <circle cx="40.0" cy="194" r="7" fill="#3178c6"/>
+    <text x="58.0" y="200" class="nm">TypeScript</text>
+    <text x="232.0" y="200" class="rp">1 repo</text>
     <rect x="312.0" y="190" width="88.0" height="8" rx="4" fill="#1f2547"/>
-    <rect x="312.0" y="190" width="77.4" height="8" rx="4" fill="#3572A5" class="mini" style="animation-delay:0.57s"/>
-    <text x="480.0" y="200" text-anchor="end" class="pc">22.4%</text>
+    <rect x="312.0" y="190" width="67.4" height="8" rx="4" fill="#3178c6" class="mini" style="animation-delay:0.57s"/>
+    <text x="480.0" y="200" text-anchor="end" class="pc">20.4%</text>
   </g>
   <g class="row" style="animation-delay:0.64s">
-    <circle cx="40.0" cy="238" r="7" fill="#3178c6"/>
-    <text x="58.0" y="244" class="nm">TypeScript</text>
-    <text x="232.0" y="244" class="rp">1 repo</text>
+    <circle cx="40.0" cy="238" r="7" fill="#3572A5"/>
+    <text x="58.0" y="244" class="nm">Python</text>
+    <text x="232.0" y="244" class="rp">2 repos</text>
     <rect x="312.0" y="234" width="88.0" height="8" rx="4" fill="#1f2547"/>
-    <rect x="312.0" y="234" width="67.4" height="8" rx="4" fill="#3178c6" class="mini" style="animation-delay:0.64s"/>
-    <text x="480.0" y="244" text-anchor="end" class="pc">19.5%</text>
+    <rect x="312.0" y="234" width="63.3" height="8" rx="4" fill="#3572A5" class="mini" style="animation-delay:0.64s"/>
+    <text x="480.0" y="244" text-anchor="end" class="pc">19.1%</text>
   </g>
   <g class="row" style="animation-delay:0.71s">
     <circle cx="40.0" cy="282" r="7" fill="#f1e05a"/>
@@ -51,7 +51,7 @@
     <text x="232.0" y="288" class="rp">17 repos</text>
     <rect x="312.0" y="278" width="88.0" height="8" rx="4" fill="#1f2547"/>
     <rect x="312.0" y="278" width="53.6" height="8" rx="4" fill="#f1e05a" class="mini" style="animation-delay:0.71s"/>
-    <text x="480.0" y="288" text-anchor="end" class="pc">15.6%</text>
+    <text x="480.0" y="288" text-anchor="end" class="pc">16.2%</text>
   </g>
   <g class="row" style="animation-delay:0.78s">
     <circle cx="40.0" cy="326" r="7" fill="#dea584"/>
@@ -59,7 +59,7 @@
     <text x="232.0" y="332" class="rp">1 repo</text>
     <rect x="312.0" y="322" width="88.0" height="8" rx="4" fill="#1f2547"/>
     <rect x="312.0" y="322" width="23.9" height="8" rx="4" fill="#dea584" class="mini" style="animation-delay:0.78s"/>
-    <text x="480.0" y="332" text-anchor="end" class="pc">6.9%</text>
+    <text x="480.0" y="332" text-anchor="end" class="pc">7.2%</text>
   </g>
   <g class="row" style="animation-delay:0.85s">
     <circle cx="508.0" cy="150" r="7" fill="#555555"/>
@@ -67,7 +67,7 @@
     <text x="700.0" y="156" class="rp">1 repo</text>
     <rect x="780.0" y="146" width="88.0" height="8" rx="4" fill="#1f2547"/>
     <rect x="780.0" y="146" width="18.9" height="8" rx="4" fill="#555555" class="mini" style="animation-delay:0.85s"/>
-    <text x="948.0" y="156" text-anchor="end" class="pc">5.5%</text>
+    <text x="948.0" y="156" text-anchor="end" class="pc">5.7%</text>
   </g>
   <g class="row" style="animation-delay:0.92s">
     <circle cx="508.0" cy="194" r="7" fill="#b07219"/>
@@ -75,7 +75,7 @@
     <text x="700.0" y="200" class="rp">1 repo</text>
     <rect x="780.0" y="190" width="88.0" height="8" rx="4" fill="#1f2547"/>
     <rect x="780.0" y="190" width="8.5" height="8" rx="4" fill="#b07219" class="mini" style="animation-delay:0.92s"/>
-    <text x="948.0" y="200" text-anchor="end" class="pc">2.5%</text>
+    <text x="948.0" y="200" text-anchor="end" class="pc">2.6%</text>
   </g>
   <g class="row" style="animation-delay:0.99s">
     <circle cx="508.0" cy="238" r="7" fill="#6E4C13"/>
@@ -91,6 +91,6 @@
     <text x="700.0" y="288" class="rp"></text>
     <rect x="780.0" y="278" width="88.0" height="8" rx="4" fill="#1f2547"/>
     <rect x="780.0" y="278" width="4.0" height="8" rx="4" fill="#4b5577" class="mini" style="animation-delay:1.06s"/>
-    <text x="948.0" y="288" text-anchor="end" class="pc">0.9%</text>
+    <text x="948.0" y="288" text-anchor="end" class="pc">1.0%</text>
   </g>
 </svg>
